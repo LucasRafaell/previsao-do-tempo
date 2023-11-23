@@ -1,4 +1,4 @@
-![X-MEN_ScreenShot](https://github.com/LucasRafaell/x-men/assets/99283985/9f6d377f-8238-46d9-95cc-4a441a82e083)
+![previsao_do_tempo](https://github.com/LucasRafaell/previsao-do-tempo/assets/99283985/4943331b-abc8-461d-91f4-0bcc852a287b)
 <p>Aplicação Web para exibir a previsão do tempo</p>
 <p>Nesta página é possivel digitar uma cidade para mostrar os dados da previsão do tempo da mesma em tempo real</p>
 
