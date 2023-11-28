@@ -9,6 +9,8 @@ botaoDeBusca.addEventListener("click", async () => {
 
     const dados = await buscarDadosDaCidade(cidade);
 
+    console.log(dados);
+
     if(dados) preencherDadosNaTela(dados, cidade);
 });
 
@@ -30,8 +32,11 @@ function preencherDadosNaTela(dados, cidade) {
     const humidade = dados.current.humidity;
     const velocidadeDoVento = dados.current.wind_kph;
     const iconeCondicao = dados.current.condition.icon;
+    const UF = dados.location.region;
+    const pais = dados.location.country;
 
-    document.getElementById("cidade").textContent = cidade;
+    document.getElementById("cidade").textContent = `${cidade} - ${UF}`;
+    document.getElementById("pais").textContent = pais;
     document.getElementById("temperatura").textContent = `${temperatura} °C`
     document.getElementById("condicao").textContent = condicao;
     document.getElementById("humidade").textContent = `${humidade}%`;
